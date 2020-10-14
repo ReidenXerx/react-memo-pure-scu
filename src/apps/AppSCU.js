@@ -27,14 +27,15 @@ class AppSCU extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    var { count } = this.state;
-    const countOld = count;
-    var { count } = nextState;
-    const countNew = count;
+    const { count: countOld } = this.state;
+    const { count: countNew } = nextState;
+
     console.log(`count = ${countOld}, countNew = ${countNew}`);
+
     if (countOld === countNew) {
       return false;
-    } else return true;
+    }
+    return true;
   }
 
   render() {

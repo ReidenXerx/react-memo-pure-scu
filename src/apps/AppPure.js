@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 
-class Pure extends PureComponent {
+class Pure extends PureComponent {//чистый компонент делает глубокое сравнение состояний и пропсов, что позволяет провести сравнение состояний и пропсов распаковывая их вложенные объекты
   constructor(props) {
     super(props);
     this.state = {
